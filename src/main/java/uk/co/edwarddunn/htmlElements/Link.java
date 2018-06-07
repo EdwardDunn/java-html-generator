@@ -1,4 +1,4 @@
-package htmlElements;
+package uk.co.edwarddunn.htmlElements;
 
 public class Link {
 	

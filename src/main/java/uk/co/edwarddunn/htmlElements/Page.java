@@ -1,4 +1,4 @@
-package htmlElements;
+package uk.co.edwarddunn.htmlElements;
 
 import java.util.ArrayList;
 import java.util.List;

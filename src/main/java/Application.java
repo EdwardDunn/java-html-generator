@@ -1,4 +1,4 @@
-import htmlElements.Page;
+import uk.co.edwarddunn.htmlElements.Page;
 
 public class Application {
 
