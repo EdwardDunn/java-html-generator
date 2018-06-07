@@ -9,7 +9,7 @@ public class Link {
 	
 	public Link() { }
 	
-	public String getLinkElement(String linkUrl, String linkName) {
+	public String addLink(String linkUrl, String linkName) {
 		String link = "";
 		link+= START_TAG + HREF_TAG + linkUrl + HREF_END_TAG + linkName + END_TAG;
 		return link;

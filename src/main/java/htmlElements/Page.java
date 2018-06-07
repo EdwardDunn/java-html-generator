@@ -32,7 +32,7 @@ public class Page {
 	
 	public void addLink(String linkUrl, String linkName) {
 		Link link = new Link();
-		pageHtml.add(link.getLinkElement(linkUrl, linkName));
+		pageHtml.add(link.addLink(linkUrl, linkName));
 	}
 	
 	public void addImage(String imagePath, String altText) {
@@ -45,7 +45,8 @@ public class Page {
 	}
 	
 	public void addHeader(String text) {
-		
+		Header header = new Header();
+		pageHtml.add(header.addHeader(text));
 	}
 	
 	public void addSubHeader(String text) {
