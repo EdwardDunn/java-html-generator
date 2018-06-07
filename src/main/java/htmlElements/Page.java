@@ -35,8 +35,9 @@ public class Page {
 		pageHtml.add(link.getLinkElement(linkUrl, linkName));
 	}
 	
-	public void addImage(String imagePath) {
+	public void addImage(String imagePath, String altText) {
 		Image image = new Image();
+		pageHtml.add(image.addImage(imagePath, altText));
 	}
 	
 	public void addParagraph(String text) {
