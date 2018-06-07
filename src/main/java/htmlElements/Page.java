@@ -24,14 +24,23 @@ public class Page {
 	}
 	
 	public void addLink(String linkUrl) {
+		Link link = new Link();
 		
 	}
 	
 	public void addImage(String imagePath) {
-		
+		Image image = new Image();
 	}
 	
 	public void addParagraph(String text) {
+		
+	}
+	
+	public void addHeader(String text) {
+		
+	}
+	
+	public void addSubHeader(String text) {
 		
 	}
 	
