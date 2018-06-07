@@ -41,7 +41,8 @@ public class Page {
 	}
 	
 	public void addParagraph(String text) {
-		
+		Paragraph paragraph = new Paragraph();
+		pageHtml.add(paragraph.addParagraph(text));
 	}
 	
 	public void addHeader(String text) {
