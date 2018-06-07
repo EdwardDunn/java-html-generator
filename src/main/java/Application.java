@@ -6,7 +6,8 @@ public class Application {
 		
 		// example test
 		Page page = new Page("Test Page");
-		page.addHeader("Test Header");
+		page.addHeader("Main Header");
+		page.addSubHeader("Sub Header");
 		page.addLink("https://google.com", "test link");
 		page.addImage("test.jpg", "test image");
 		page.printHtml();

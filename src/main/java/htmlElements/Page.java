@@ -50,7 +50,8 @@ public class Page {
 	}
 	
 	public void addSubHeader(String text) {
-		
+		Header header = new Header();
+		pageHtml.add(header.addSubHeader(text));
 	}
 	
 	private void completePageTags() {
