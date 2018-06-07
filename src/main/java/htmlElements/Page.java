@@ -8,6 +8,13 @@ public class Page {
 	private List<String> pageHtml;
 	private String pageName;
 	
+	private String HTML_START_TAG = "<html>";
+	private String HTML_END_TAG = "</html>";
+	private String TITLE_START_TAG = "<title>";
+	private String TITLE_END_TAG = "</title>";
+	private String BODY_START_TAG = "<body>";
+	private String BODY_END_TAG = "</body>";
+	
 	public Page() {	}
 	
 	public Page(String _pageName) {
@@ -15,17 +22,17 @@ public class Page {
 		pageHtml = new ArrayList<String>();
 		
 		// create initial page tags
-		pageHtml.add("<html>");
+		pageHtml.add(HTML_START_TAG);
 		
 		// add page name as title
-		pageHtml.add("<title>" + pageName + "</title>");
+		pageHtml.add(TITLE_START_TAG + pageName + TITLE_END_TAG);
 		
-		pageHtml.add("<body>");
+		pageHtml.add(BODY_START_TAG);
 	}
 	
-	public void addLink(String linkUrl) {
+	public void addLink(String linkUrl, String linkName) {
 		Link link = new Link();
-		
+		pageHtml.add(link.getLinkElement(linkUrl, linkName));
 	}
 	
 	public void addImage(String imagePath) {
@@ -45,8 +52,8 @@ public class Page {
 	}
 	
 	private void completePageTags() {
-		pageHtml.add("</body>");
-		pageHtml.add("</html>");
+		pageHtml.add(BODY_END_TAG);
+		pageHtml.add(HTML_END_TAG);
 	}
 	
 	public void printHtml() {
