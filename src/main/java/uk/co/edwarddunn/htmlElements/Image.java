@@ -9,9 +9,9 @@ public class Image {
 	
 	public Image() { }
 	
-	public String addImage(String imagePath, String alt_text) {
+	public String addImage(String imagePath, String altText) {
 		String imageElement = "";
-		imageElement+= START_TAG + imagePath + END_QOUTE + ALT_START_TAG + alt_text + END_QOUTE + END_TAG;
+		imageElement+= START_TAG + imagePath + END_QOUTE + ALT_START_TAG + altText + END_QOUTE + END_TAG;
 		return imageElement;
 	}
 	
