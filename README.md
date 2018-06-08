@@ -1,7 +1,7 @@
 # java-html-generator
 Java based HTML generator for making simple HTML pages quickly
 
-The application is designed to provde a console interface for quickly creating simple HTML pages. Rather than being aimed
+The application is designed to provide a console interface for quickly creating simple HTML pages. Rather than being aimed
 at novice programmers it is instead aimed at reducing the simple tasks of experienced developers.
 
 #### Example Implementation</br>
