@@ -1,6 +1,9 @@
-/**
- * 
+/*
+ * Description: Test class used to test the Link class with a range of different inputs.
+ * @author Edward Dunn
+ * @version 1.0 
  */
+
 package uk.co.edwarddunn.tests;
 
 import static org.junit.Assert.*;

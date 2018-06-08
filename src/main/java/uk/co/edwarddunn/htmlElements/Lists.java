@@ -14,7 +14,7 @@ public class Lists {
 	private String ORDERED_START_TAG = "<ul>";
 	
 	/** The ordered end tag. */
-	private String ORDERED_END_TAG = "<ul>";
+	private String ORDERED_END_TAG = "</ul>";
 	
 	/** The unordered start tag. */
 	private String UNORDERED_START_TAG = "<ol>";

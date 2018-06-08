@@ -1,6 +1,9 @@
-/**
- * 
+/*
+ * Description: Test class used to test the Image class with a range of different inputs.
+ * @author Edward Dunn
+ * @version 1.0 
  */
+
 package uk.co.edwarddunn.tests;
 
 import static org.junit.Assert.*;
@@ -9,10 +12,6 @@ import org.junit.Test;
 
 import uk.co.edwarddunn.htmlElements.Image;
 
-/**
- * @author Edward Dunn
- *
- */
 
 public class ImageTests {
 
@@ -79,7 +78,5 @@ public class ImageTests {
 		// assert
 		assertEquals(expectedResult, actualResult);	
 	}
-	
-
 
 }
