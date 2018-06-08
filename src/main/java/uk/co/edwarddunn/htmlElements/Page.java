@@ -55,6 +55,28 @@ public class Page {
 		pageHtml.add(header.addSubHeader(text));
 	}
 	
+	public void addOrderedList(String... items) {
+		List<String> listArray = new ArrayList<String>();
+		
+		for(String item : items) {
+			listArray.add(item);
+		}
+		
+		Lists list = new Lists();
+		pageHtml.add(list.addOrderedList(listArray));	
+	}
+	
+	public void addUnorderedList(String... items) {
+		List<String> listArray = new ArrayList<String>();
+		
+		for(String item : items) {
+			listArray.add(item);
+		}
+		
+		Lists list = new Lists();
+		pageHtml.add(list.addUnorderedList(listArray));
+	}
+	
 	private void completePageTags() {
 		pageHtml.add(BODY_END_TAG);
 		pageHtml.add(HTML_END_TAG);
