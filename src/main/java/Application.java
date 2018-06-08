@@ -4,7 +4,7 @@ public class Application {
 
 	public static void main(String args[]) {
 		
-		// example test
+		// example usage
 		Page page = new Page("Test Page");
 		page.addHeader("Main Header");
 		page.addSubHeader("Sub Header");
