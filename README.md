@@ -11,6 +11,8 @@ at novice programmers it is instead aimed at reducing the simple tasks of experi
     page.addLink("https://google.com", "test link");
     page.addImage("test.jpg", "test image");
     page.addParagraph("This application provides quick implementation of HTML pages.");
+    page.addOrderedList("item1", "item2", "item3");
+	page.addUnorderedList("item1", "item2", "item3");
     page.printHtml();
 
 #### Example Output</br>
@@ -22,6 +24,16 @@ at novice programmers it is instead aimed at reducing the simple tasks of experi
     <a href ="https://google.com">test link</a>
     <img src="test.jpg" alt="test image">
     <p>This application provides quick implementation of HTML pages</p>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    <ul>
+    <ol>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ol>
     </body>
     </html>
 
